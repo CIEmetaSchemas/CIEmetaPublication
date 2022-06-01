@@ -4,7 +4,8 @@
 //  ---------------------
 //
 //	defines a Schema for CIE documents (i.e. technical reports, standards, etc)
-//	
+//	in addition there can be a field "embeddedDatasets" which can be an array of Datasets
+//      the definition of the Dataset Schema can be found at: "https://doi.org/10.25039/CIE.SC.4taqevcd"	
 //
 "$schema": "http://json-schema.org/draft-07/schema#",
 	"definitions": {
