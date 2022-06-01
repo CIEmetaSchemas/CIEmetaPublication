@@ -41,6 +41,17 @@
 		"reportNumber": {
 			"type": "string"
 		},
+		"abstract": {
+			"type": "string"
+		},
+		"ISBN": {
+			"type": "string"
+		},
+		"keywords":{
+			"items":{
+				"type":"string"
+			}
+		},
 		"date": {
 			"type": "object",
 			"properties":{
