@@ -1,0 +1,85 @@
+{
+//
+//  CIEmetaReport Schema
+//  ---------------------
+//
+//	defines a Schema for CIE documents (i.e. technical reports, standards, etc)
+//	
+//
+"$schema": "http://json-schema.org/draft-07/schema#",
+	"definitions": {
+		"reportType": {
+			"type": "string",
+			"enum": [
+				"technical-report",
+				"technical-note",
+				"technical-amendment",
+				"technical-corrigenda",
+				"proceeding",
+				"standard",
+				"supplement",
+				"serie",
+				"other"
+			]
+		},
+	},
+	"type": "object",
+	"properties": {
+		"author": {
+			"type": "string"
+		},
+		"title": {
+			"type": "string"
+		},
+		"DOI": {
+			"type": "string"
+		},
+		"publisher": {
+			"type": "string"
+		},
+		"reportNumber": {
+			"type": "string"
+		},
+		"date": {
+			"type": "object",
+			"properties":{
+				"Year":{
+					"type":"string"
+				},
+				"Month":{
+					"type":"string"
+				},
+				"Day":{
+					"type":"string"
+				}
+			}
+		},
+		"language": {
+			"type": "string"
+		},
+		"reportType":	{
+			"$ref":"#/definitions/reportType"
+		},
+		"schemaName": {
+			"type": "string",
+			"const": "CIEmetaReport"
+		},
+		"schemaVersion": {
+			"type": "number",
+			"const": 2
+		},
+		"schemaURL": {
+			"type": "string",
+			"const": "https://doi.org/10.25039/CIE.SC.39bt3a7g"
+		},		
+		
+	},
+	"required": [
+		"author",
+		"title",
+		"date",
+		"schemaName",
+		"schemaVersion",
+		"schemaURL"
+	]
+}
