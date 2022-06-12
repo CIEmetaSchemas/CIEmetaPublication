@@ -3,9 +3,9 @@
 //  CIEmetaReport Schema
 //  ---------------------
 //
-//	defines a Schema for CIE documents (i.e. technical reports, standards, etc)
-//	in addition there can be a field "embeddedDatasets" which can be an array of Datasets
-//      the definition of the Dataset Schema can be found at: "https://doi.org/10.25039/CIE.SC.4taqevcd"	
+//	defines a Schema for CIE publications (i.e. technical reports, standards, etc)
+//	in addition there can be a field "embeddedData" which can be an array of Data (i.e. Datasets, etc)
+//      the definition of the Data Schema can be found at: "https://doi.org/10.25039/CIE.SC.4taqevcd"	
 //
 "$schema": "http://json-schema.org/draft-07/schema#",
 	"definitions": {
@@ -74,7 +74,7 @@
 		},
 		"schemaName": {
 			"type": "string",
-			"const": "CIEmetaReport"
+			"const": "CIEmetaPublication"
 		},
 		"schemaVersion": {
 			"type": "number",
