@@ -4,7 +4,7 @@
 //  ---------------------
 //
 //	defines a Schema for CIE publications (i.e. technical reports, standards, etc)
-//	in addition there can be a field "embeddedData" which can be an array of Data (i.e. Datasets, etc)
+//	in addition there can be a field "embeddedDigitalProducts" which can be an array of CIEmetaDigitalProducts (i.e. Datasets, etc)
 //      the definition of the Data Schema can be found at: "https://doi.org/10.25039/CIE.SC.4taqevcd"	
 //
 "$schema": "http://json-schema.org/draft-07/schema#",
